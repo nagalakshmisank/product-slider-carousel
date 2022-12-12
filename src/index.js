@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './style1.css';
+
 //import './index.css';
-//import App from './App';
 //import images from "./images";
 //import ImageSlider from "./ImageSlider";
 //import MultipleItems from './ReactSlick';
 import Carousel from './Carouselupdate1';
 import reportWebVitals from './reportWebVitals';
+//import GridExampleDemo from './productcardupdate1';
+
+
+
+
+
+//import GridExampleDemo from './productcardupdate2';
+//import Productcard from './prodcard-bootstarp';
+//import GridExampleDemo from './productcardupdate2';
 
 
 
@@ -16,7 +24,13 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
-    <Carousel />
+    <>
+      <Carousel />
+      
+      </>
+
+
+    {/*<Productcard />*/}
     {/*<ImageSlider images={images}/>*/}
     {/*<MultipleItems />*/}
   </React.StrictMode>

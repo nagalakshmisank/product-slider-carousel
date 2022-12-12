@@ -3,14 +3,23 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 import './style1.css';
 import { useState } from 'react';
-import About from './about';
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+//import GridExampleDemo from './productcardupdate2';
+
+//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+//import About from './about';
+
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa'
+
+//import GridExampleDemo from './productcardupdate2';
 
 
 
 export default function Carousel() {
-    const [sliderRef, setSliderRef] = useState(null)
+    const [sliderRef, setSliderRef] = useState(null);
+
+
+
 
     const sliderSettings = {
         arrows: false,
@@ -198,7 +207,8 @@ export default function Carousel() {
   ]
 
   return (
-   <Router>
+
+
     <div className='content'>
         <h1 style={{textAlign:"center"}}>Card Slider Carousel</h1>
         <div className='main-banner'>
@@ -208,8 +218,9 @@ export default function Carousel() {
 
             
           <img alt={banner.title} src={banner.imageSrc} className='banner-image' />
-          <a href = "https://www.flipkart.com/">
-          <button className='button-info'>{banner.buttoninfo}</button></a>
+          
+          <button className='button-info'>{banner.buttoninfo}</button>
+
           <div className='banner-text'>
           <div className='banner-header'>
                 <h2>{banner.title}</h2>
@@ -219,9 +230,7 @@ export default function Carousel() {
 
             <p>{banner.description}</p>
           </div>
-          <Routes>
-           <Route  path='/about' element={< About />}></Route>
-         </Routes>
+
         </div>
       ))}
       
@@ -255,11 +264,15 @@ export default function Carousel() {
           <button>Buy Now</button>
         </div>
       ))}
+
+    
     </Slider>
 
 
+
   </div>
-  </Router>
+  
+
 
   )
 }
